@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path(r'^about/$', TemplateView.as_view(template_name='portfolio/about.html'), name='about'),
+    path('about/', TemplateView.as_view(template_name='portfolio/about.html'), name='about'),
 
 ]
